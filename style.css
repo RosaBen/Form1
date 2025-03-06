@@ -1,6 +1,128 @@
-body {
+:root{
+    --primary-color: #0A2463;
+    --secondary-color: #3A3C3D;
+    --tertiary-color: #757575;
+    --font-primary: #f0f0f0;
+}
+
+ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: var(--font-primary); 
+}
+
+main{
+    width:75%;
+    background-color: var(--primary-color);
+    margin: 0 auto;
+    color:var(--font-primary)
+}
+
+#title{
+    width: 100%;
+    font-size: 3rem;
+    height: 12.5%;
+    text-align: center;
+    margin: 0;
+    padding: 16px 0;
+    background-color: var(--secondary-color);
+}
+
+#description{
+    font-size: 1.5rem;
+    border: 2px solid var(--font-primary);
+    width: calc(100% -2rem);
+    margin: 0.5rem 1rem 0;
+    padding: 0.5rem 1rem;
+}
+
+#survey-form{
+    background:linear-gradient(var(--font-primary),var(--tertiary-color),var(--secondary-color));
+    width: calc(100% - 2rem);
+    margin: 0.5rem auto 0;
+}
+fieldset{
+color: var(--primary-color);
+}
+legend{
+    font-weight: bold;
+}
+
+fieldset:nth-child(1) {
+    width: calc(100% - 3rem);
+    margin: 0.5rem auto 0;
+}
+
+#identity{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#lastname-input, #firstname-input, #age-input{
+    display: flex;
+    gap: 0.5rem;
+}
+
+#contact-input{
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+#contact-input input{
+    width: 75%;
+}
+
+#select-input legend{
+    font-weight: normal;
+}
+
+#radio-checkbox-textarea{
+    width:calc(100% -2rem);
+    margin: 0.5rem auto 0;
+    display: flex;
+}
+
+#block2{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0;
+}
+
+#textarea-input{
+  width:50%;  
+  margin: 0 .6rem 0 0; 
+}
+
+#radio-input, #checkbox-input{
+    width: calc(100% - 3rem);
+}
+
+#radio-input{
+    margin: .5rem 0 0 .7rem
+}
+
+#textarea-input>textarea{
+    width: 100%;
+    height: 100%;
+}
+
+#submit-button{
+    display: flex;
+    text-align: center;
+    font-size: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#submit{
+    width: 20%;
+    margin: 0.5rem auto;
+    background-color: var(--primary-color);
+    color: var(--font-primary);
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-size: 1.5rem;
 }

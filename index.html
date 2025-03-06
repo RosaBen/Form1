@@ -4,29 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Venue Questionnaire</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id="title">Welcoming sisterhood venue</h1>
-    <p id="description">It would be a space primarily dedicated to women, where they can share their 
-talents, work, or relax.</p>
-<p>This space will have modular furniture to allow easy setup based on events.</p>
-<p>It will also be available for rent as a party venue with a fully equipped kitchen.</p>
-    <p>This questionnaire will help assess demand and make adjustments to the project.</p>
+<main>
+        <h1 id="title">Welcoming sisterhood venue</h1>
+   
+            <p id="description">It would be a space primarily dedicated to women, where they can share their 
+talents, work, or relax.
+<br>
+<br>
+This space will have modular furniture to allow easy setup based on events.
+<br>
+<br>
+It will also be available for rent as a party venue with a fully equipped kitchen.
+<br>
+<br>
+    This questionnaire will help assess demand and make adjustments to the project.</p>
     <form action="submit.php" method="post" id="survey-form">
 <fieldset>
     <legend>Personal Information</legend>
+<div id="identity">
+<div id="lastname-input">
             <label for="name" id="name-label">LastName:</label>
         <input type="text" id="name" name="lastname" placeholder="ex: Lounis" required >
-        <br>
-        <label for="firstname">FirstName: </label>
+</div>
+<div id="firstname-input">
+            <label for="firstname">FirstName: </label>
         <input type="text" id="firstname" name="firstname" placeholder="ex: Kheltoum" required>
-        <label for="email" id="email-label">Email: </label>
-        <input type="email" id="email" name="email" placeholder="ex: test@gmail.com" required>
-        <br>
-        <label for="number" id="number-label">Age: </label>
+</div>
+<div id="age-input">
+            <label for="number" id="number-label">Age: </label>
         <input type="number" id="number" name="age" min="16" max="110" placeholder="ex: 20">
-        <br>
-        <fieldset>
+</div>
+</div>
+<div id="contact-input">
+            <label for="email" id="email-label">Email: </label>
+        <input type="email" id="email" name="email" placeholder="ex: test@gmail.com" required>
+</div>
+        <fieldset id="select-input">
             <legend>What do you do?</legend>
             <select name="dropdown" id="dropdown" class="form-control">
             <option disabled selected value>Select an option</option>
@@ -36,27 +52,32 @@ talents, work, or relax.</p>
             </select>
         </fieldset>
 </fieldset>
-        <fieldset>
+<div id="radio-checkbox-textarea">
+    <div id="block2">
+            <fieldset id="checkbox-input">
             <legend>Which activity(ies) will interest you the most?</legend>
             <p><input type="checkbox" id="working-space" name="working-space" value="workingSpace"> Working Space</p>
             <p><input type="checkbox" id="sharing-knowledge" name="sharing-knowledge" value="sharing-knowledge"> Sharing Knowledge</p>
             <p><input type="checkbox" id="chilling" name="chilling" value="chilling"> Chilling</p>
             <p><input type="checkbox" id="showing-artistry" name="showing-artistry" value="showing-artistry"> Showing-artistry(comedy, painting, dancing...)</p>
-        </fieldset>
-        <br>
-        <fieldset>
-            <legend>Do you have other idea of event for this potential place?</legend>
-            <textarea name="other-ideas" id="other-ideas" cols="30" rows="5"></textarea>
-        </fieldset>
-        <br>
-        <fieldset>
+        </fieldset >
+                <fieldset id="radio-input">
             <legend>Can we contact you to get more insight?</legend>
             <p><input type="radio" id="yes" name="contact" value="yes"> Yes</p>
             <p><input type="radio" id="no" name="contact" value="no"> No</p>
         </fieldset>
-        <br>
-        <p>Thank you for participating!</p>
+</div>
+
+            <fieldset id="textarea-input">
+            <legend>Do you have other idea of event for this potential place?</legend>
+            <textarea name="other-ideas" id="other-ideas" placeholder="type your other suggestions here"></textarea>
+        </fieldset>
+</div>
+<div id="submit-button">
+            <p>Thank you for participating!</p>
         <input type="submit" value="Submit" id="submit">
+</div>
         </form>
+</main>
 </body>
 </html>
