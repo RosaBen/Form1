@@ -126,3 +126,52 @@ fieldset:nth-child(1) {
     padding: 0.5rem;
     font-size: 1.5rem;
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1392px){
+    main{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #title{
+        font-size: 2.5rem;
+    }
+
+    #description{
+        font-size: 1rem;
+    }
+
+    #survey-form{
+        width: calc(100% - 2rem);
+        margin: 0.5rem auto 0;
+        padding: 0.5rem 0;
+    }
+    #id-fieldset{
+        margin: 0.5rem auto 0;
+        padding: 0.5rem;
+    }
+    #name, #firstname, #age,#contact-input{
+        width: 50%;
+    }
+
+    #identity{
+        display: flex;
+        gap: 1rem;
+    }
+
+    #contact-input{
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    #select-input{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    #radio-checkbox-textarea{
+        width: calc(100% - 0.5rem);
+    }
+}
