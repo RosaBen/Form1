@@ -243,6 +243,25 @@ fieldset:nth-child(1) {
         justify-content: center;
         margin: 0 auto;
     }
+
+        #submit-button{
+        display: flex;
+        text-align: center;
+        font-size: 1rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #submit{
+        width: 30%;
+        margin: 0.5rem auto;
+        background-color: var(--primary-color);
+        color: var(--font-primary);
+        border: 2px solid var(--secondary-color);
+        border-radius: 10px;
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1392px){
