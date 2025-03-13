@@ -127,6 +127,86 @@ fieldset:nth-child(1) {
     font-size: 1.5rem;
 }
 
+@media screen and (min-width: 375px) and (max-width: 768px){
+
+        main{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+        #title{
+            width: calc(100% - 1rem);
+        font-size: 1.2rem;
+        padding: 0 0.5rem 0.5rem;
+    }
+
+    #description{
+        font-size: 0.8rem;
+    }
+
+    #name, #firstname, #age,#contact-input{
+        width: 100%;
+    }
+
+            #identity{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+            #contact-input{
+        display: flex;
+        gap: 1rem;
+    }
+
+            #select-input{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    #radio-checkbox-textarea{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+ .legend{
+        font-size: 1rem;
+    }
+
+    #block2{
+        width: 100%;
+        margin: 0;
+    }
+
+    #textarea-input{
+        width: calc(100% - 3rem);
+        margin: 0.5rem  auto 0;
+    }
+
+    #submit-button{
+        display: flex;
+        text-align: center;
+        font-size: 1rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #submit{
+        width: 30%;
+        margin: 0.5rem auto;
+        background-color: var(--primary-color);
+        color: var(--font-primary);
+        border: 2px solid var(--secondary-color);
+        border-radius: 10px;
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+}
+
+
 @media screen and (min-width: 768px) and (max-width: 1024px){
         main{
         width: 80%;
